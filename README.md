@@ -4,6 +4,9 @@ This network service enables the FeIDo credential services to query if a given
 eID has been reported as stolen/blocked.
 
 ## Build and Run Instructions
+**Note:** Please fetch this repo as a submodule of the umbrella repo: https://github.com/feido-token/feido.
+Otherwise, the symoblic links to the FeIDo protobuf files will not resolve.
+
 0. Update protobuf generated file (if required):
     ```
     protoc --go_out=. ./feido-proto/feido-database.proto
